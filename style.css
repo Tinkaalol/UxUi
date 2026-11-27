@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Carme&family=Fugaz+One&family=Hind:wght@400&family=Inter:wght@400&family=Jaldi:wght@400&family=M+PLUS+1p:wght@700&display=swap");
+
+:root {
+  color-scheme: dark;
+  --black: #000;
+  --white: #fff;
+  --muted: #9e9e9e;
+  --yellow: #fddc39;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  background: #111;
+}
+
+.page {
+  position: relative;
+  width: min(402px, 100%);
+  min-height: 1200px;
+  margin-inline: auto;
+  overflow: hidden;
+  background: var(--black);
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  position: absolute;
+  z-index: 10;
+  inset: 0 0 auto;
+  height: 81px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  background: var(--black);
+}
+
+.brand {
+  position: absolute;
+  left: 21px;
+  bottom: 7px;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.brand__logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.brand__name {
+  padding-bottom: 1px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.nav {
+  position: absolute;
+  left: 146px;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  height: 15px;
+  font-family: "Jaldi", sans-serif;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.nav a,
+.login,
+.footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.language {
+  position: absolute;
+  left: 92px;
+  bottom: 14px;
+  width: 15px;
+  height: 10px;
+}
+
+.language__flag {
+  display: grid;
+  position: absolute;
+  inset: 0;
+  place-items: center;
+  border-radius: 1px;
+  background: url("./assets/kz.svg") center / cover no-repeat;
+  color: #000;
+  font-family: "Fugaz One", cursive;
+  font-size: 7px;
+  line-height: 1;
+}
+
+.login {
+  position: absolute;
+  right: 33px;
+  bottom: 10px;
+  display: grid;
+  width: 40px;
+  height: 20px;
+  place-items: center;
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+  background: #000;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.25);
+  font-family: "Jaldi", sans-serif;
+  font-size: 10px;
+}
+
+.banner {
+  position: absolute;
+  top: 82px;
+  left: 0;
+  width: 402px;
+  height: 360px;
+  background: var(--black);
+  text-align: center;
+}
+
+.banner__art {
+  position: absolute;
+  left: 108px;
+  top: 15px;
+  width: 180px;
+  height: 180px;
+}
+
+.banner__yellow {
+  position: absolute;
+  inset: 0;
+  background: var(--yellow);
+  filter: blur(2px);
+}
+
+.banner__art img {
+  position: absolute;
+  left: 3.53px;
+  top: 2.69px;
+  width: 172.938px;
+  height: 172.938px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.banner h1 {
+  position: absolute;
+  left: 61.5px;
+  top: 216px;
+  width: 279px;
+  height: 51px;
+  margin: 0;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+.banner__actions {
+  position: absolute;
+  left: 65px;
+  top: 304px;
+  display: flex;
+  width: 265px;
+  justify-content: space-between;
+}
+
+.button {
+  display: grid;
+  width: 85px;
+  height: 30px;
+  place-items: center;
+  border-radius: 4px;
+  color: #000;
+  font-family: "Hind", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  background: url("./assets/button.svg") center / 100% 100% no-repeat;
+}
+
+.button--primary {
+  background: linear-gradient(#fddc39, #fddc39);
+  border-radius: 2px;
+}
+
+.how-it-works {
+  position: absolute;
+  top: 474px;
+  left: 0;
+  width: 402px;
+  height: 583px;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  position: absolute;
+  left: 97px;
+  top: -9px;
+  width: 208px;
+  height: 23px;
+  margin: 0;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.step {
+  position: absolute;
+  left: 114px;
+  width: 174px;
+  text-align: center;
+}
+
+.step:nth-of-type(1) {
+  top: 55px;
+}
+
+.step:nth-of-type(2) {
+  top: 195px;
+}
+
+.step:nth-of-type(3) {
+  top: 335px;
+}
+
+.step img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 17px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.step h3 {
+  margin: 0 auto 5px;
+  width: 118px;
+  min-height: 23px;
+  font-family: "M PLUS 1p", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+}
+
+.step p {
+  width: 173px;
+  margin: 0 auto;
+  font-family: "Carme", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  top: 1057px;
+  width: 402px;
+  height: 143px;
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  background: var(--black);
+  text-align: center;
+}
+
+.footer__brand {
+  position: absolute;
+  left: 114px;
+  top: 18px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.footer__brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.footer a {
+  position: absolute;
+  left: 143px;
+  top: 78px;
+  width: 116px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 11px;
+}
+
+.footer p {
+  position: absolute;
+  left: 83px;
+  top: 98px;
+  width: 236px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@media (max-width: 402px) {
+  .page {
+    min-height: 1200px;
+  }
+
+  .header,
+  .banner,
+  .how-it-works,
+  .footer {
+    max-width: 100%;
+  }
+}
