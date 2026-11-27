@@ -1,9 +1,9 @@
 <svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="85" height="30" viewBox="0 0 85 30" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Rectangle 5">
 <path d="M0 5C0 2.23858 2.23858 0 5 0H80C82.7614 0 85 2.23858 85 5V25C85 27.7614 82.7614 30 80 30H5C2.23858 30 0 27.7614 0 25V5Z" fill="#FDDD3A"/>
-<mask id="stroke0_0_10" fill="white">
+<mask id="stroke0_0_14" fill="white">
 <path d="M0 5C0 2.23858 2.23858 0 5 0H80C82.7614 0 85 2.23858 85 5V25C85 27.7614 82.7614 30 80 30H5C2.23858 30 0 27.7614 0 25V5Z"/>
 </mask>
-<path d="M5 30H80C82.7614 30 85 27.7614 85 25V5C85 2.23858 82.7614 0 80 0H5C2.23858 0 0 2.23858 0 5V25C0 27.7614 2.23858 30 5 30Z" stroke="black" mask="url(#stroke0_0_10)"/>
+<path d="M5 30H80C82.7614 30 85 27.7614 85 25V5C85 2.23858 82.7614 0 80 0H5C2.23858 0 0 2.23858 0 5V25C0 27.7614 2.23858 30 5 30Z" stroke="black" mask="url(#stroke0_0_14)"/>
 </g>
 </svg>
